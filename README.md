@@ -26,6 +26,7 @@ Esta carpeta contiene una serie de scripts bash que abarcan diversos temas y con
 - [18_check_directory.sh](./18_check_directory.sh): Script que comprueba si un directorio existe en Bash.
 - [19_curl.sh](./19_curl.sh): Script que muestra cómo realizar solicitudes HTTP utilizando curl en Bash.
 - [20_debugin.sh](./20_debugin.sh): Script que muestra cómo depurar un script Bash.
+- [Ejercicios](./ejercicios/): Scripts con ejercicios de ayuda
 
 ## Colocar permisos a los archivos
 ```bash
