@@ -13,3 +13,4 @@ Esta carpeta contiene una serie de ejercicios en bash
 - [e07_valida_directorio.sh](./e07_valida_directorio.sh): Validar si un directorio existe, y si no, crearlo.
 - [e08_menu_interactivo.sh](./e08_menu_interactivo.sh): Crear un menú interactivo con opciones.
 - [e09_buscar_palabra.sh](./e09_buscar_palabra.sh): Busca una palabra en un archivo
+- [e10_servicio_status.sh](./e10_servicio_status.sh): Revisa el estado de varios servicios
