@@ -14,3 +14,4 @@ Esta carpeta contiene una serie de ejercicios en bash
 - [e08_menu_interactivo.sh](./e08_menu_interactivo.sh): Crear un menú interactivo con opciones.
 - [e09_buscar_palabra.sh](./e09_buscar_palabra.sh): Busca una palabra en un archivo
 - [e10_servicio_status.sh](./e10_servicio_status.sh): Revisa el estado de varios servicios
+- [e11_backup_logs.sh](./e11_backup_logs.sh): Crea un backup de los logs del sistema.
