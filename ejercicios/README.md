@@ -16,3 +16,4 @@ Esta carpeta contiene una serie de ejercicios en bash
 - [e10_servicio_status.sh](./e10_servicio_status.sh): Revisa el estado de varios servicios
 - [e11_backup_logs.sh](./e11_backup_logs.sh): Crea un backup de los logs del sistema.
 - [e12_monitor_disco.sh](./e12_monitor_disco.sh): Monitoreo de Uso de Disco y Alertas
+- [e13_gestion_usuarios](./e13_gestion_usuarios): Crea un usuario y valida si existe
