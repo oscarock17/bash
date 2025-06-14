@@ -76,7 +76,27 @@ crear_base_de_datos() {
 configurar_apache() {
   log "Configurando Apache..."
   sudo a2enmod rewrite >> "$LOG_FILE" 2>&1
-  sudo systemctl restart apache2 >> "$LOG_FILE" 2>&1
+
+  # Crear VirtualHost
+  VHOST_FILE="/etc/apache2/sites-available/test-aicoll.conf"
+  sudo tee "$VHOST_FILE" > /dev/null <<EOF
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/html/test-aicoll/public
+
+    <Directory /var/www/html/test-aicoll/public>
+        AllowOverride All
+        Require all granted
+    </Directory>
+
+    ErrorLog \${APACHE_LOG_DIR}/test-aicoll_error.log
+    CustomLog \${APACHE_LOG_DIR}/test-aicoll_access.log combined
+</VirtualHost>
+EOF
+
+  sudo a2dissite 000-default.conf >> "$LOG_FILE" 2>&1
+  sudo a2ensite test-aicoll.conf >> "$LOG_FILE" 2>&1
+  sudo systemctl reload apache2 >> "$LOG_FILE" 2>&1
   success "Apache configurado y reiniciado."
 }
 
